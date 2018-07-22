@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: DiscoveryServer
+    
+
+  
+---
+
+spring:
+  profiles: discovery
+server:
+  port: ${port}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.host}
+      
+            
+  
